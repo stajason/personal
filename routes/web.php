@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('base');
 });
+
+/**
+ * pdf转换成图片页面
+ */
+Route::get('pdf/img', 'PageFpdfController@pdfToImg');
